@@ -8,7 +8,7 @@ import { askQuestion, clear, print } from '../ui/console';
 
 interface WakeUp {
 	wake?: WakeUpFromDream;
-}
+} 
 interface WakeUpFromDream {
 	wake?: WakeUpFromREMSleep;
 }
@@ -48,5 +48,14 @@ export function wakeUp(): void {
 
 function tryToWakeUp(): WakeUp {
 	// 👉 FIXME ❌
-	return {};
+	return {
+	wake: {
+		wake: {
+			wake: {
+				canWake: 'Yes',
+				},
+			},
+		},
+	};
 }
+

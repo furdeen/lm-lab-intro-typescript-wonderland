@@ -19,8 +19,17 @@ type Table = {
 };
 
 function setTheTable(): Table {
-	// 👉 FIXME ❌
-	return { seats: [] };
+	// 👉 FIXed - change the table to have 4 seats. and add a tea to each seat.
+	const table: Table = { seats: [] };
+	for (let i = 0; i < 4; i++) {
+		table.seats.push({
+			drink: {
+				type: 'Tea',
+				poured: true,
+			},
+		});
+	}
+	return table;
 }
 
 export function attendATeaParty() {
