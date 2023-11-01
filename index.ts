@@ -7,7 +7,7 @@ export function haveAdventures(): void {
 	print('| Welcome to Wonderland! |');
 	print('--------------------------');
 
-	askQuestion(`What's your name? `, enterTheRabbitHole); //i Fix this 
+	askQuestion(`What's your name? `, startAdventure); //i Fix this 
 }
 
 function startAdventure(name: string): void {
@@ -30,7 +30,7 @@ function failImmediately() {
 	return endAdventure();
 }
 
-const numberBiggerThanThree: any = '11'; // 👉 FIXME ❌
+const numberBiggerThanThree: number = 4; // 👉 FIXME ❌
 
 // 👉 FIXME ❌
 function checkEntryCodeIsBiggerThanThree(code: any) {
